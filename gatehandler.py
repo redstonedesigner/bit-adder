@@ -23,7 +23,7 @@ class GateHandler:
         return self._not(self._or(a, b))
 
     def nand(self, a, b):
-        return self._not(self._or(a, b))
+        return self._not(self._and(a, b))
 
     def xor(self, a, b):
         return True if (a and self._not(b)) or (self._not(a) and b) else False
