@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pyinquirer = {git = "https://github.com/CITGuru/PyInquirer.git"}
+regex = "*"
 
 [dev-packages]
 pytest = "*"
