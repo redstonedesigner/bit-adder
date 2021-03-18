@@ -1,4 +1,4 @@
-import gatehandler
+from lib import gatehandler
 
 
 class Tests:
@@ -22,3 +22,22 @@ class Tests:
         assert gates.xor(0, 1) is True
         assert gates.xor(1, 0) is True
         assert gates.xor(1, 1) is False
+
+    def test_and(self):
+        gates = gatehandler.GateHandler()
+        assert gates.and_gate(0, 0) is False
+        assert gates.and_gate(0, 1) is False
+        assert gates.and_gate(1, 0) is False
+        assert gates.and_gate(1, 1) is True
+
+    def test_not(self):
+        gates = gatehandler.GateHandler()
+        assert gates.not_gate(0) is True
+        assert gates.not_gate(1) is False
+
+    def test_or(self):
+        gates = gatehandler.GateHandler()
+        assert gates.or_gate(0, 0) is False
+        assert gates.or_gate(0, 1) is True
+        assert gates.or_gate(1, 0) is True
+        assert gates.or_gate(1, 1) is True
