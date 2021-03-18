@@ -36,4 +36,6 @@ def get_numbers():
         num1 = list(answers['num1'])
         num2 = list(answers['num2'])
 
-    return [num1, num2]
+    return_value = [num1, num2]
+
+    return return_value

@@ -4,8 +4,11 @@ import lib.utils
 
 numbers = lib.utils.get_numbers()
 
-num1 = lib.utils.str_to_list(numbers[0]).reverse()
-num2 = lib.utils.str_to_list(numbers[1]).reverse()
+num1 = lib.utils.str_to_list(numbers[0])
+num2 = lib.utils.str_to_list(numbers[1])
+
+num1.reverse()
+num2.reverse()
 
 result = []
 
