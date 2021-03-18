@@ -26,4 +26,7 @@ class GateHandler:
         return self.not_gate(self.and_gate(a, b))
 
     def xor(self, a, b):
-        return True if (a and self.not_gate(b)) or (self.not_gate(a) and b) else False
+        return True \
+            if (a and self.not_gate(b)) \
+            or (self.not_gate(a) and b) \
+            else False
